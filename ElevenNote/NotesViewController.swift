@@ -46,13 +46,13 @@ class NotesViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "NotesDetailViewControllerSegue" {
         
-            let noteDetailViewCOntroller = segue.destinationViewController as
+            let noteDetailViewController = segue.destinationViewController as
                 NotesDetailViewController
         
         if let editingRow = editRow {
-            noteDetailViewCOntroller.titleText = rows[editingRow.row]
+            noteDetailViewController.titleText = rows[editingRow.row]
             
-            noteDetailViewCOntroller.completion = {
+            noteDetailViewController.completion = {
                 (newTitleText) -> () in
                
                 // Update the array
@@ -61,10 +61,23 @@ class NotesViewController: UITableViewController {
             
                 self.tableView.reloadRowsAtIndexPaths([self.editRow!], withRowAnimation: UITableViewRowAnimation.Automatic)
             }
-            noteDetailViewCOntroller.cancel = {
+            noteDetailViewController.cancel = {
                 self.editRow = nil
             }
             }
+        } else if segue.identifier == "AddSegue" {
+            let noteDetailViewController = segue.destinationViewController as NotesDetailViewController
+            
+                noteDetailViewController.completion = {
+                    (newTitleText) -> () in
+                    
+                    self.rows.append(newTitleText)
+                    
+                    var appendPath = NSIndexPath(forRow: self.rows.count - 1, inSection: 0)
+                    self.tableView.insertRowsAtIndexPaths([appendPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                    
+            }
+            
         }
     }
 }
