@@ -49,8 +49,21 @@ class NotesViewController: UITableViewController {
             let noteDetailViewCOntroller = segue.destinationViewController as
                 NotesDetailViewController
         
-        if let editingRow = editRow{
+        if let editingRow = editRow {
             noteDetailViewCOntroller.titleText = rows[editingRow.row]
+            
+            noteDetailViewCOntroller.completion = {
+                (newTitleText) -> () in
+               
+                // Update the array
+                self.rows[editingRow.row] =  newTitleText
+                
+            
+                self.tableView.reloadRowsAtIndexPaths([self.editRow!], withRowAnimation: UITableViewRowAnimation.Automatic)
+            }
+            noteDetailViewCOntroller.cancel = {
+                self.editRow = nil
+            }
             }
         }
     }
