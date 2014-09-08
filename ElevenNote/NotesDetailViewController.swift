@@ -10,7 +10,14 @@ import UIKit
 
 class NotesDetailViewController: UIViewController {
     
-        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        titleLabel.text = titleText
+    }
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    var titleText: String = ""
+    
 }
 
