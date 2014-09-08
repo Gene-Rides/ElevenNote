@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		550CF76619BE2C0100BD58D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF76519BE2C0100BD58D4 /* AppDelegate.swift */; };
+		550CF76819BE2C0100BD58D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF76719BE2C0100BD58D4 /* ViewController.swift */; };
+		550CF76B19BE2C0100BD58D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550CF76919BE2C0100BD58D4 /* Main.storyboard */; };
+		550CF76D19BE2C0100BD58D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550CF76C19BE2C0100BD58D4 /* Images.xcassets */; };
+		550CF77919BE2C0100BD58D4 /* ElevenNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF77819BE2C0100BD58D4 /* ElevenNoteTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		550CF77319BE2C0100BD58D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 550CF75819BE2C0100BD58D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 550CF75F19BE2C0100BD58D4;
+			remoteInfo = ElevenNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		550CF76019BE2C0100BD58D4 /* ElevenNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElevenNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		550CF76419BE2C0100BD58D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550CF76519BE2C0100BD58D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		550CF76719BE2C0100BD58D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		550CF76A19BE2C0100BD58D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		550CF76C19BE2C0100BD58D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		550CF77219BE2C0100BD58D4 /* ElevenNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevenNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		550CF77719BE2C0100BD58D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550CF77819BE2C0100BD58D4 /* ElevenNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevenNoteTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		550CF75D19BE2C0100BD58D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		550CF76F19BE2C0100BD58D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		550CF75719BE2C0100BD58D4 = {
+			isa = PBXGroup;
+			children = (
+				550CF76219BE2C0100BD58D4 /* ElevenNote */,
+				550CF77519BE2C0100BD58D4 /* ElevenNoteTests */,
+				550CF76119BE2C0100BD58D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		550CF76119BE2C0100BD58D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				550CF76019BE2C0100BD58D4 /* ElevenNote.app */,
+				550CF77219BE2C0100BD58D4 /* ElevenNoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		550CF76219BE2C0100BD58D4 /* ElevenNote */ = {
+			isa = PBXGroup;
+			children = (
+				550CF76519BE2C0100BD58D4 /* AppDelegate.swift */,
+				550CF76719BE2C0100BD58D4 /* ViewController.swift */,
+				550CF76919BE2C0100BD58D4 /* Main.storyboard */,
+				550CF76C19BE2C0100BD58D4 /* Images.xcassets */,
+				550CF76319BE2C0100BD58D4 /* Supporting Files */,
+			);
+			path = ElevenNote;
+			sourceTree = "<group>";
+		};
+		550CF76319BE2C0100BD58D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				550CF76419BE2C0100BD58D4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		550CF77519BE2C0100BD58D4 /* ElevenNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				550CF77819BE2C0100BD58D4 /* ElevenNoteTests.swift */,
+				550CF77619BE2C0100BD58D4 /* Supporting Files */,
+			);
+			path = ElevenNoteTests;
+			sourceTree = "<group>";
+		};
+		550CF77619BE2C0100BD58D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				550CF77719BE2C0100BD58D4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		550CF75F19BE2C0100BD58D4 /* ElevenNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 550CF77C19BE2C0100BD58D4 /* Build configuration list for PBXNativeTarget "ElevenNote" */;
+			buildPhases = (
+				550CF75C19BE2C0100BD58D4 /* Sources */,
+				550CF75D19BE2C0100BD58D4 /* Frameworks */,
+				550CF75E19BE2C0100BD58D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElevenNote;
+			productName = ElevenNote;
+			productReference = 550CF76019BE2C0100BD58D4 /* ElevenNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		550CF77119BE2C0100BD58D4 /* ElevenNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 550CF77F19BE2C0100BD58D4 /* Build configuration list for PBXNativeTarget "ElevenNoteTests" */;
+			buildPhases = (
+				550CF76E19BE2C0100BD58D4 /* Sources */,
+				550CF76F19BE2C0100BD58D4 /* Frameworks */,
+				550CF77019BE2C0100BD58D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				550CF77419BE2C0100BD58D4 /* PBXTargetDependency */,
+			);
+			name = ElevenNoteTests;
+			productName = ElevenNoteTests;
+			productReference = 550CF77219BE2C0100BD58D4 /* ElevenNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		550CF75819BE2C0100BD58D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = ChaCha_gmo;
+				TargetAttributes = {
+					550CF75F19BE2C0100BD58D4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					550CF77119BE2C0100BD58D4 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 550CF75F19BE2C0100BD58D4;
+					};
+				};
+			};
+			buildConfigurationList = 550CF75B19BE2C0100BD58D4 /* Build configuration list for PBXProject "ElevenNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 550CF75719BE2C0100BD58D4;
+			productRefGroup = 550CF76119BE2C0100BD58D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				550CF75F19BE2C0100BD58D4 /* ElevenNote */,
+				550CF77119BE2C0100BD58D4 /* ElevenNoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		550CF75E19BE2C0100BD58D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550CF76B19BE2C0100BD58D4 /* Main.storyboard in Resources */,
+				550CF76D19BE2C0100BD58D4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		550CF77019BE2C0100BD58D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		550CF75C19BE2C0100BD58D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550CF76819BE2C0100BD58D4 /* ViewController.swift in Sources */,
+				550CF76619BE2C0100BD58D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		550CF76E19BE2C0100BD58D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550CF77919BE2C0100BD58D4 /* ElevenNoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		550CF77419BE2C0100BD58D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 550CF75F19BE2C0100BD58D4 /* ElevenNote */;
+			targetProxy = 550CF77319BE2C0100BD58D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		550CF76919BE2C0100BD58D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				550CF76A19BE2C0100BD58D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		550CF77A19BE2C0100BD58D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		550CF77B19BE2C0100BD58D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		550CF77D19BE2C0100BD58D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ElevenNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		550CF77E19BE2C0100BD58D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ElevenNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		550CF78019BE2C0100BD58D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ElevenNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElevenNote.app/ElevenNote";
+			};
+			name = Debug;
+		};
+		550CF78119BE2C0100BD58D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ElevenNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElevenNote.app/ElevenNote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		550CF75B19BE2C0100BD58D4 /* Build configuration list for PBXProject "ElevenNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550CF77A19BE2C0100BD58D4 /* Debug */,
+				550CF77B19BE2C0100BD58D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		550CF77C19BE2C0100BD58D4 /* Build configuration list for PBXNativeTarget "ElevenNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550CF77D19BE2C0100BD58D4 /* Debug */,
+				550CF77E19BE2C0100BD58D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		550CF77F19BE2C0100BD58D4 /* Build configuration list for PBXNativeTarget "ElevenNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550CF78019BE2C0100BD58D4 /* Debug */,
+				550CF78119BE2C0100BD58D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 550CF75819BE2C0100BD58D4 /* Project object */;
+}
