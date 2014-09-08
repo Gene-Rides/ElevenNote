@@ -14,11 +14,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ku8-yM-eN2">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Ku8-yM-eN2">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ku8-yM-eN2" id="QGZ-SF-pvr">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="uEz-0C-17b" kind="push" id="q36-3g-8PP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -29,7 +32,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ayg-4N-XEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234" y="504"/>
+            <point key="canvasLocation" x="-178" y="438"/>
+        </scene>
+        <!--Notes Detail View Controller-->
+        <scene sceneID="cwQ-fR-mqn">
+            <objects>
+                <viewController id="uEz-0C-17b" customClass="NotesDetailViewController" customModule="ElevenNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qlm-E9-FTX"/>
+                        <viewControllerLayoutGuide type="bottom" id="UUG-Fn-JhS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="un1-ji-fPn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Yz-w1-gTY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wc4-pR-EKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="431"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

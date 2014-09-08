@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550B9A5119BE39BA006E0442 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9A5019BE39BA006E0442 /* NotesViewController.swift */; };
 		550CF76619BE2C0100BD58D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF76519BE2C0100BD58D4 /* AppDelegate.swift */; };
-		550CF76819BE2C0100BD58D4 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF76719BE2C0100BD58D4 /* NotesViewController.swift */; };
+		550CF76819BE2C0100BD58D4 /* NotesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF76719BE2C0100BD58D4 /* NotesDetailViewController.swift */; };
 		550CF76B19BE2C0100BD58D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550CF76919BE2C0100BD58D4 /* Main.storyboard */; };
 		550CF76D19BE2C0100BD58D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550CF76C19BE2C0100BD58D4 /* Images.xcassets */; };
 		550CF77919BE2C0100BD58D4 /* ElevenNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF77819BE2C0100BD58D4 /* ElevenNoteTests.swift */; };
@@ -25,10 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550B9A5019BE39BA006E0442 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		550CF76019BE2C0100BD58D4 /* ElevenNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElevenNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		550CF76419BE2C0100BD58D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550CF76519BE2C0100BD58D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		550CF76719BE2C0100BD58D4 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		550CF76719BE2C0100BD58D4 /* NotesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailViewController.swift; sourceTree = "<group>"; };
 		550CF76A19BE2C0100BD58D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		550CF76C19BE2C0100BD58D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		550CF77219BE2C0100BD58D4 /* ElevenNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevenNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,10 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				550CF76519BE2C0100BD58D4 /* AppDelegate.swift */,
-				550CF76719BE2C0100BD58D4 /* NotesViewController.swift */,
+				550CF76719BE2C0100BD58D4 /* NotesDetailViewController.swift */,
 				550CF76919BE2C0100BD58D4 /* Main.storyboard */,
 				550CF76C19BE2C0100BD58D4 /* Images.xcassets */,
 				550CF76319BE2C0100BD58D4 /* Supporting Files */,
+				550B9A5019BE39BA006E0442 /* NotesViewController.swift */,
 			);
 			path = ElevenNote;
 			sourceTree = "<group>";
@@ -208,8 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550CF76819BE2C0100BD58D4 /* NotesViewController.swift in Sources */,
+				550CF76819BE2C0100BD58D4 /* NotesDetailViewController.swift in Sources */,
 				550CF76619BE2C0100BD58D4 /* AppDelegate.swift in Sources */,
+				550B9A5119BE39BA006E0442 /* NotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +401,7 @@
 				550CF77E19BE2C0100BD58D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		550CF77F19BE2C0100BD58D4 /* Build configuration list for PBXNativeTarget "ElevenNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +410,7 @@
 				550CF78119BE2C0100BD58D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
