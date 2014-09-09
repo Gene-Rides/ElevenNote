@@ -11,7 +11,7 @@ import UIKit
 class NotesViewController: UITableViewController {
     
     var editRow : NSIndexPath?
-    var rows = ["Gene", "Joe", "Mark", "Don"]
+    var notes = [Note]() //["Gene", "Joe", "Mark", "Don"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class NotesViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return rows.count
+        return notes.count
     
     }
     
@@ -29,9 +29,9 @@ class NotesViewController: UITableViewController {
         
         var cell = UITableViewCell()
         var row = indexPath.row
-        var rowData = rows[row]
+        var rowData = notes[row]
         
-        cell.textLabel?.text = rowData
+        cell.textLabel?.text = rowData.title
         
         return cell
     
@@ -50,17 +50,22 @@ class NotesViewController: UITableViewController {
                 NotesDetailViewController
         
         if let editingRow = editRow {
-            noteDetailViewController.titleText = rows[editingRow.row]
+            noteDetailViewController.note = notes[editingRow.row]
             
             noteDetailViewController.completion = {
-                (newTitleText) -> () in
+                (note) -> () in
                
                 // Update the array
-                self.rows[editingRow.row] =  newTitleText
+                self.notes[editingRow.row] =  note
                 
-            
+                //
                 self.tableView.reloadRowsAtIndexPaths([self.editRow!], withRowAnimation: UITableViewRowAnimation.Automatic)
+                
+                //Reset State
+                self.editRow = nil
+                
             }
+            
             noteDetailViewController.cancel = {
                 self.editRow = nil
             }
@@ -70,13 +75,16 @@ class NotesViewController: UITableViewController {
         
             let noteDetailViewController = segue.destinationViewController as NotesDetailViewController
             
-                noteDetailViewController.completion = {
-                    (newTitleText) -> () in
+            noteDetailViewController.completion = {
+                (note) -> () in
                     
-                    self.rows.append(newTitleText)
+               // self.rows.append(newTitleText)
+                self.notes.append(note)
+            
+                //Update the table
                     
-                    var appendPath = NSIndexPath(forRow: self.rows.count - 1, inSection: 0)
-                    self.tableView.insertRowsAtIndexPaths([appendPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                var appendPath = NSIndexPath(forRow: self.notes.count - 1, inSection: 0)
+                self.tableView.insertRowsAtIndexPaths([appendPath], withRowAnimation: UITableViewRowAnimation.Automatic)
                     
             }
             

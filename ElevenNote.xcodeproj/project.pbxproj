@@ -13,6 +13,7 @@
 		550CF76B19BE2C0100BD58D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550CF76919BE2C0100BD58D4 /* Main.storyboard */; };
 		550CF76D19BE2C0100BD58D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550CF76C19BE2C0100BD58D4 /* Images.xcassets */; };
 		550CF77919BE2C0100BD58D4 /* ElevenNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF77819BE2C0100BD58D4 /* ElevenNoteTests.swift */; };
+		55FF5AB919BF4958001A91AA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5AB819BF4958001A91AA /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		550CF77219BE2C0100BD58D4 /* ElevenNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevenNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550CF77719BE2C0100BD58D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550CF77819BE2C0100BD58D4 /* ElevenNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevenNoteTests.swift; sourceTree = "<group>"; };
+		55FF5AB819BF4958001A91AA /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				550CF76C19BE2C0100BD58D4 /* Images.xcassets */,
 				550CF76319BE2C0100BD58D4 /* Supporting Files */,
 				550B9A5019BE39BA006E0442 /* NotesViewController.swift */,
+				55FF5AB819BF4958001A91AA /* Note.swift */,
 			);
 			path = ElevenNote;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FF5AB919BF4958001A91AA /* Note.swift in Sources */,
 				550CF76819BE2C0100BD58D4 /* NotesDetailViewController.swift in Sources */,
 				550CF76619BE2C0100BD58D4 /* AppDelegate.swift in Sources */,
 				550B9A5119BE39BA006E0442 /* NotesViewController.swift in Sources */,

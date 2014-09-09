@@ -10,9 +10,8 @@ import UIKit
 
 class NotesDetailViewController: UIViewController {
    
-    var titleText: String = ""
-    
-    var completion : (    (String) -> () )?
+    var note = Note()
+    var completion : (    (Note) -> () )?
     var cancel : (() -> ())?
     
     @IBOutlet weak var titleField: UITextField!
@@ -20,7 +19,11 @@ class NotesDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleField.text = titleText
+        titleField.text = note.title
+        
+        self.title = note.title
+        titleField.becomeFirstResponder()
+        
     }
 
 //    @IBOutlet weak var titleLabel: UILabel!
@@ -29,7 +32,8 @@ class NotesDetailViewController: UIViewController {
     
     @IBAction func SaveTapped(sender: AnyObject) {
         if let doSave = completion {
-            doSave(titleField!.text!)
+            note.title = titleField.text
+            doSave(note)
         }
         if self.navigationController != nil {
             self.navigationController!.popViewControllerAnimated(true)
