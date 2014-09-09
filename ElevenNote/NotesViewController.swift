@@ -64,8 +64,10 @@ class NotesViewController: UITableViewController {
             noteDetailViewController.cancel = {
                 self.editRow = nil
             }
-            }
-        } else if segue.identifier == "AddSegue" {
+        }
+        
+    } else if segue.identifier == "AddSegue" {
+        
             let noteDetailViewController = segue.destinationViewController as NotesDetailViewController
             
                 noteDetailViewController.completion = {
