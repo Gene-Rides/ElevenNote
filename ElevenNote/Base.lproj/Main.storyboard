@@ -19,6 +19,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ku8-yM-eN2" id="QGZ-SF-pvr">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.45754840837055677" green="1" blue="0.34769040291177522" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="uEz-0C-17b" kind="push" identifier="NotesDetailViewControllerSegue" id="q36-3g-8PP"/>
                                 </connections>
@@ -75,7 +76,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.4575484084" green="1" blue="0.34769040289999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Yz-w1-gTY">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="a9w-Oi-bLx">
