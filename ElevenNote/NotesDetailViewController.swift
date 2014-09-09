@@ -27,7 +27,7 @@ class NotesDetailViewController: UIViewController {
         
     }
 
-//    @IBOutlet weak var titleLabel: UILabel!
+//    @IBOutlet weak var titleLabel: UILabel! this is how content comes out of the UI
     
 
     

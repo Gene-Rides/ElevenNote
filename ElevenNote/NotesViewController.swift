@@ -27,12 +27,24 @@ class NotesViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Something")
+        var cell = tableView.dequeueReusableCellWithIdentifier("NoteTableViewCell") as
+            NoteTableViewCell!
+        
+        // Dequeue from the View Controller Stack
+        
+        if cell == nil {
+            //creating a new cell
+            cell = NoteTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "NoteTableViewCell")
+        }
+        
+        //this creates a resuable cell
+        
         var row = indexPath.row
         var note = notes[row]
         
-        cell.textLabel?.text = note.title
-        cell.detailTextLabel?.text = note.text
+        cell.setupCell(note)
+        
+//      cell.setupCell(notes[IndexPath])
         
         return cell
     
@@ -40,55 +52,47 @@ class NotesViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         editRow = indexPath
-        performSegueWithIdentifier("NotesDetailViewControllerSegue", sender: self)
+        performSegueWithIdentifier("NoteDetailPush", sender: self)
     
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "NotesDetailViewControllerSegue" {
-        
-            let noteDetailViewController = segue.destinationViewController as
-                NotesDetailViewController
-        
-        if let editingRow = editRow {
-            noteDetailViewController.note = notes[editingRow.row]
+        if segue.identifier == "NoteDetailPush" {
             
-            noteDetailViewController.completion = {
-                (note) -> () in
-               
-                // Update the array
-                self.notes[editingRow.row] =  note
-                
-                //
-                self.tableView.reloadRowsAtIndexPaths([self.editRow!], withRowAnimation: UITableViewRowAnimation.Automatic)
-                
-                //Reset State
-                self.editRow = nil
-                
-            }
+            //1: Grab the new view controller we are about to show
             
-            noteDetailViewController.cancel = {
-                self.editRow = nil
-            }
-        }
-        
-    } else if segue.identifier == "AddSegue" {
-        
             let noteDetailViewController = segue.destinationViewController as NotesDetailViewController
             
+            // 2: If we are in editing mode, pass along the note
+            if let row = editRow {
+                noteDetailViewController.note = self.notes[row.row]
+            }
+            
+            // 3: Setup our completion block
             noteDetailViewController.completion = {
                 (note) -> () in
                     
-               // self.rows.append(newTitleText)
-                self.notes.append(note)
+                //3a: if coming back from edit mode ...
+                    if let editingRow = self.editRow {
+                // Don't need to do anythign with the note, we aleady passed it by ref
             
-                //Update the table
+                // 3a1; Update the table
+                    self.tableView.reloadRowsAtIndexPaths([self.editRow!], withRowAnimation: UITableViewRowAnimation.Automatic)
+                        
+                // 3a2: Reset State
+                    self.editRow = nil
+                        
+                    } else {// 3b: if coming back in edit mode (else)
                     
-                var appendPath = NSIndexPath(forRow: self.notes.count - 1, inSection: 0)
-                self.tableView.insertRowsAtIndexPaths([appendPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-                    
+                    // 3b1: Update our array
+                    self.notes.append(note)
+                        
+                    // 3b2: Update the table
+                        
+                    var appendPath = NSIndexPath(forRow: self.notes.count - 1, inSection: 0)
+                    self.tableView.insertRowsAtIndexPaths([appendPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                }
             }
-            
         }
     }
 }

@@ -14,4 +14,10 @@ class Note
     var text = ""
     var date = NSDate()
     
+    var shortDate: NSString {
+        let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "MM/dd/yy"
+            return dateFormatter.stringFromDate(self.date)
+    }
+    
 }
