@@ -15,11 +15,12 @@ class NotesDetailViewController: UIViewController {
     var cancel : (() -> ())?
     
     @IBOutlet weak var titleField: UITextField!
-
+    @IBOutlet weak var noteContent: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         titleField.text = note.title
+        noteContent.text = note.text
         
         self.title = note.title
         titleField.becomeFirstResponder()
@@ -33,6 +34,8 @@ class NotesDetailViewController: UIViewController {
     @IBAction func SaveTapped(sender: AnyObject) {
         if let doSave = completion {
             note.title = titleField.text
+            note.text = noteContent.text
+            
             doSave(note)
         }
         if self.navigationController != nil {
@@ -49,5 +52,8 @@ class NotesDetailViewController: UIViewController {
             self.navigationController!.popViewControllerAnimated(true)
         }
     }
+
+    
 }
+
 

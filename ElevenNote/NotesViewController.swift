@@ -27,11 +27,12 @@ class NotesViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = UITableViewCell()
+        var cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Something")
         var row = indexPath.row
-        var rowData = notes[row]
+        var note = notes[row]
         
-        cell.textLabel?.text = rowData.title
+        cell.textLabel?.text = note.title
+        cell.detailTextLabel?.text = note.text
         
         return cell
     
