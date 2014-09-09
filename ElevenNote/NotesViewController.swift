@@ -25,6 +25,19 @@ class NotesViewController: UITableViewController {
     
     }
     
+    //Edit Button
+    @IBAction func editTable(sender: UIBarButtonItem) {
+        
+        self.tableView.editing = !self.tableView.editing
+        
+        if self.tableView.editing {
+            sender.title = "Done"
+        }else{
+            sender.title = "Edit"
+        }
+    }
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("NoteTableViewCell") as
@@ -57,6 +70,8 @@ class NotesViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        tableView.editing = false
+        
         if segue.identifier == "NoteDetailPush" {
             
             //1: Grab the new view controller we are about to show
@@ -94,5 +109,17 @@ class NotesViewController: UITableViewController {
                 }
             }
         }
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            var noteToDelete = self.noteStore.allNotes[indexPath.row]
+            
+            // have to store it to delete it
+            noteStore.deleteNote(noteToDelete)
+            
+            //update the table
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
     }
 }

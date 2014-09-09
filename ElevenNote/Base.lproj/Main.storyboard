@@ -53,6 +53,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="qpU-C5-Q2D">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="zjo-xr-tbk">
+                            <connections>
+                                <action selector="editTable:" destination="5JU-VH-dtx" id="Y1H-gv-nH9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="rut-yb-PZj">
                             <connections>
                                 <segue destination="uEz-0C-17b" kind="push" identifier="NoteDetailPush" id="4TY-AU-S2Q"/>
