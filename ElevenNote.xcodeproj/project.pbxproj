@@ -14,6 +14,7 @@
 		550CF76D19BE2C0100BD58D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550CF76C19BE2C0100BD58D4 /* Images.xcassets */; };
 		550CF77919BE2C0100BD58D4 /* ElevenNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CF77819BE2C0100BD58D4 /* ElevenNoteTests.swift */; };
 		55D8388D19BF8B6400342DC2 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8388C19BF8B6400342DC2 /* NoteTableViewCell.swift */; };
+		55ED551219BFABBE00426ECD /* NoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED551119BFABBE00426ECD /* NoteStore.swift */; };
 		55FF5AB919BF4958001A91AA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5AB819BF4958001A91AA /* Note.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		550CF77719BE2C0100BD58D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550CF77819BE2C0100BD58D4 /* ElevenNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevenNoteTests.swift; sourceTree = "<group>"; };
 		55D8388C19BF8B6400342DC2 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		55ED551119BFABBE00426ECD /* NoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteStore.swift; sourceTree = "<group>"; };
 		55FF5AB819BF4958001A91AA /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				550CF76C19BE2C0100BD58D4 /* Images.xcassets */,
 				550CF76319BE2C0100BD58D4 /* Supporting Files */,
 				55FF5AB819BF4958001A91AA /* Note.swift */,
+				55ED551119BFABBE00426ECD /* NoteStore.swift */,
 			);
 			path = ElevenNote;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				55FF5AB919BF4958001A91AA /* Note.swift in Sources */,
 				550CF76819BE2C0100BD58D4 /* NotesDetailViewController.swift in Sources */,
 				550CF76619BE2C0100BD58D4 /* AppDelegate.swift in Sources */,
+				55ED551219BFABBE00426ECD /* NoteStore.swift in Sources */,
 				55D8388D19BF8B6400342DC2 /* NoteTableViewCell.swift in Sources */,
 				550B9A5119BE39BA006E0442 /* NotesViewController.swift in Sources */,
 			);

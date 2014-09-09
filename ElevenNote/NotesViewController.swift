@@ -11,7 +11,7 @@ import UIKit
 class NotesViewController: UITableViewController {
     
     var editRow : NSIndexPath?
-    var notes = [Note]() //["Gene", "Joe", "Mark", "Don"]
+    var noteStore = NoteStore.sharedNoteStore
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class NotesViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return notes.count
+        return noteStore.allNotes.count
     
     }
     
@@ -40,7 +40,7 @@ class NotesViewController: UITableViewController {
         //this creates a resuable cell
         
         var row = indexPath.row
-        var note = notes[row]
+        var note = noteStore.allNotes[row]
         
         cell.setupCell(note)
         
@@ -65,7 +65,7 @@ class NotesViewController: UITableViewController {
             
             // 2: If we are in editing mode, pass along the note
             if let row = editRow {
-                noteDetailViewController.note = self.notes[row.row]
+                noteDetailViewController.note = self.noteStore.allNotes[row.row]
             }
             
             // 3: Setup our completion block
@@ -85,11 +85,11 @@ class NotesViewController: UITableViewController {
                     } else {// 3b: if coming back in edit mode (else)
                     
                     // 3b1: Update our array
-                    self.notes.append(note)
+                    self.noteStore.allNotes.append(note)
                         
                     // 3b2: Update the table
                         
-                    var appendPath = NSIndexPath(forRow: self.notes.count - 1, inSection: 0)
+                    var appendPath = NSIndexPath(forRow: self.noteStore.allNotes.count - 1, inSection: 0)
                     self.tableView.insertRowsAtIndexPaths([appendPath], withRowAnimation: UITableViewRowAnimation.Automatic)
                 }
             }
